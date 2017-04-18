@@ -1,0 +1,3105 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/gabrielbull/react-desktop#readme"
+
+    >react-desktop (v0.2.19)</a>
+</h1>
+<h4>React UI Components for macOS Sierra and Windows 10</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop">module react-desktop</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>ValueRef</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>color</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>desktopComponent</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>dimension</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>macOs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>monitor</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>os</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>osx</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>placeholderStyle</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>styleHelper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>windowFocus</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>windows</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.ValueRef">module react-desktop.ValueRef</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.ValueRef.default">
+            function <span class="apidocSignatureSpan">react-desktop.ValueRef.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.color">module react-desktop.color</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.convertColor">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>convertColor
+            <span class="apidocSignatureSpan">(color)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.darkenColor">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>darkenColor
+            <span class="apidocSignatureSpan">(color, percent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.hexToRgb">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>hexToRgb
+            <span class="apidocSignatureSpan">(hex)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.isDarkColor">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>isDarkColor
+            <span class="apidocSignatureSpan">(color)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.ligthenColor">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>ligthenColor
+            <span class="apidocSignatureSpan">(color)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.transparentize">
+            function <span class="apidocSignatureSpan">react-desktop.color.</span>transparentize
+            <span class="apidocSignatureSpan">(color, amount)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.desktopComponent">module react-desktop.desktopComponent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.desktopComponent.Dimension">
+            function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Dimension
+            <span class="apidocSignatureSpan">(defaultWidth, defaultHeight)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.desktopComponent.default">
+            function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Alignment</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Background</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Hidden</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>HorizontalAlignment</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Margin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Padding</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>PlaceholderStyle</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>VerticalAlignment</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>WindowFocus</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.dimension">module react-desktop.dimension</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.dimension.parseDimension">
+            function <span class="apidocSignatureSpan">react-desktop.dimension.</span>parseDimension
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.macOs">module react-desktop.macOs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Box">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Box
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Button">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Button
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Checkbox">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Checkbox
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Dialog">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Dialog
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Label">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Label
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Link">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListView">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListView
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewFooter">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewFooter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewHeader">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewRow">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewRow
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewSection">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSection
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewSectionHeader">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSectionHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ListViewSeparator">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSeparator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Pin">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Pin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ProgressCircle">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ProgressCircle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Radio">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Radio
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.SearchField">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SearchField
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.SegmentedControl">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SegmentedControl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.SegmentedControlItem">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SegmentedControlItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Text">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Text
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.TextInput">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>TextInput
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.TitleBar">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>TitleBar
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Toolbar">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Toolbar
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ToolbarNav">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ToolbarNav
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.ToolbarNavItem">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ToolbarNavItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.View">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>View
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.macOs.Window">
+            function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Window
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.monitor">module react-desktop.monitor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.monitor.windowIsFocused">
+            function <span class="apidocSignatureSpan">react-desktop.monitor.</span>windowIsFocused
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.os">module react-desktop.os</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.os.default">
+            function <span class="apidocSignatureSpan">react-desktop.os.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.os.</span>MACOS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.os.</span>WINDOWS</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.osx">module react-desktop.osx</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Box">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Box
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Button">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Button
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Checkbox">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Checkbox
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Dialog">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Dialog
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Label">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Label
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Link">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListView">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListView
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewFooter">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewFooter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewHeader">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewRow">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewRow
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewSection">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSection
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewSectionHeader">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSectionHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ListViewSeparator">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSeparator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Pin">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Pin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ProgressCircle">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ProgressCircle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Radio">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Radio
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.SearchField">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>SearchField
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.SegmentedControl">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>SegmentedControl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.SegmentedControlItem">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>SegmentedControlItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Text">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Text
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.TextInput">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>TextInput
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.TitleBar">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>TitleBar
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Toolbar">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Toolbar
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ToolbarNav">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ToolbarNav
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.ToolbarNavItem">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>ToolbarNavItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.View">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>View
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.osx.Window">
+            function <span class="apidocSignatureSpan">react-desktop.osx.</span>Window
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.placeholderStyle">module react-desktop.placeholderStyle</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.placeholderStyle.default">
+            function <span class="apidocSignatureSpan">react-desktop.placeholderStyle.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.styleHelper">module react-desktop.styleHelper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.applyDefaultProps">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>applyDefaultProps
+            <span class="apidocSignatureSpan">(props, context, defaultProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.default">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>default
+            <span class="apidocSignatureSpan">(options, propTypes, mapStyleCallback, mapStylesCallback, mapProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.extractProps">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>extractProps
+            <span class="apidocSignatureSpan">(props, proptypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.hasProps">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>hasProps
+            <span class="apidocSignatureSpan">(props, proptypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.mapStyle">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>mapStyle
+            <span class="apidocSignatureSpan">(prevStyles, nextStyles, defaultStyles, styleCallback, stylesCallback, props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.styleHelper.parseDimension">
+            function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>parseDimension
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.windowFocus">module react-desktop.windowFocus</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windowFocus.default">
+            function <span class="apidocSignatureSpan">react-desktop.windowFocus.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.windows">module react-desktop.windows</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Button">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Button
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Checkbox">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Checkbox
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Label">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Label
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.MasterDetailsView">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsView
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.MasterDetailsViewItem">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.MasterDetailsViewItemDetails">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItemDetails
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.MasterDetailsViewItemMaster">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItemMaster
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.NavPane">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>NavPane
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.NavPaneItem">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>NavPaneItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.ProgressCircle">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>ProgressCircle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Radio">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Radio
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Text">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Text
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.TextInput">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>TextInput
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.TitleBar">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>TitleBar
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.View">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>View
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.windows.Window">
+            function <span class="apidocSignatureSpan">react-desktop.windows.</span>Window
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop" id="apidoc.module.react-desktop">module react-desktop</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.ValueRef" id="apidoc.module.react-desktop.ValueRef">module react-desktop.ValueRef</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.ValueRef.default" id="apidoc.element.react-desktop.ValueRef.default">
+        function <span class="apidocSignatureSpan">react-desktop.ValueRef.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function () {
+  for (var _len = arguments.length, options = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    options[_key] = arguments[_key];
+  }
+
+  if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) return ValueRef.apply(null, [options[0]]);
+  return ValueRef.bind(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.color" id="apidoc.module.react-desktop.color">module react-desktop.color</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.convertColor" id="apidoc.element.react-desktop.color.convertColor">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>convertColor
+        <span class="apidocSignatureSpan">(color)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function convertColor(color) {
+  var colors = {
+    &#x27;aliceblue&#x27;: &#x27;#f0f8ff&#x27;, &#x27;antiquewhite&#x27;: &#x27;#faebd7&#x27;, &#x27;aqua&#x27;: &#x27;#00ffff&#x27;, &#x27;aquamarine&#x27;: &#x27;#7fffd4&#x27;, &#x27;azure&#x27;: &#x27;#f0ffff&#x27;,
+    &#x27;beige&#x27;: &#x27;#f5f5dc&#x27;, &#x27;bisque&#x27;: &#x27;#ffe4c4&#x27;, &#x27;black&#x27;: &#x27;#000000&#x27;, &#x27;blanchedalmond&#x27;: &#x27;#ffebcd&#x27;, &#x27;blue&#x27;: &#x27;#0000ff&#x27;, &#x27;blueviolet&#x27;: &#x27;#
+8a2be2&#x27;, &#x27;brown&#x27;: &#x27;#a52a2a&#x27;, &#x27;burlywood&#x27;: &#x27;#deb887&#x27;,
+    &#x27;cadetblue&#x27;: &#x27;#5f9ea0&#x27;, &#x27;chartreuse&#x27;: &#x27;#7fff00&#x27;, &#x27;chocolate&#x27;: &#x27;#d2691e&#x27;, &#x27;coral&#x27;: &#x27;#ff7f50&#x27;, &#x27;cornflowerblue&#x27;: &#x27;#6495ed&#x27;, &#x27;cornsilk
+&#x27;: &#x27;#fff8dc&#x27;, &#x27;crimson&#x27;: &#x27;#dc143c&#x27;, &#x27;cyan&#x27;: &#x27;#00ffff&#x27;,
+    &#x27;darkblue&#x27;: &#x27;#00008b&#x27;, &#x27;darkcyan&#x27;: &#x27;#008b8b&#x27;, &#x27;darkgoldenrod&#x27;: &#x27;#b8860b&#x27;, &#x27;darkgray&#x27;: &#x27;#a9a9a9&#x27;, &#x27;darkgreen&#x27;: &#x27;#006400&#x27;, &#x27;darkkhaki
+&#x27;: &#x27;#bdb76b&#x27;, &#x27;darkmagenta&#x27;: &#x27;#8b008b&#x27;, &#x27;darkolivegreen&#x27;: &#x27;#556b2f&#x27;,
+    &#x27;darkorange&#x27;: &#x27;#ff8c00&#x27;, &#x27;darkorchid&#x27;: &#x27;#9932cc&#x27;, &#x27;darkred&#x27;: &#x27;#8b0000&#x27;, &#x27;darksalmon&#x27;: &#x27;#e9967a&#x27;, &#x27;darkseagreen&#x27;: &#x27;#8fbc8f&#x27;, &#x27;
+darkslateblue&#x27;: &#x27;#483d8b&#x27;, &#x27;darkslategray&#x27;: &#x27;#2f4f4f&#x27;, &#x27;darkturquoise&#x27;: &#x27;#00ced1&#x27;,
+    &#x27;darkviolet&#x27;: &#x27;#9400d3&#x27;, &#x27;deeppink&#x27;: &#x27;#ff1493&#x27;, &#x27;deepskyblue&#x27;: &#x27;#00bfff&#x27;, &#x27;dimgray&#x27;: &#x27;#696969&#x27;, &#x27;dodgerblue&#x27;: &#x27;#1e90ff&#x27;,
+    &#x27;firebrick&#x27;: &#x27;#b22222&#x27;, &#x27;floralwhite&#x27;: &#x27;#fffaf0&#x27;, &#x27;forestgreen&#x27;: &#x27;#228b22&#x27;, &#x27;fuchsia&#x27;: &#x27;#ff00ff&#x27;,
+    &#x27;gainsboro&#x27;: &#x27;#dcdcdc&#x27;, &#x27;ghostwhite&#x27;: &#x27;#f8f8ff&#x27;, &#x27;gold&#x27;: &#x27;#ffd700&#x27;, &#x27;goldenrod&#x27;: &#x27;#daa520&#x27;, &#x27;gray&#x27;: &#x27;#808080&#x27;, &#x27;green&#x27;: &#x27;#008000
+&#x27;, &#x27;greenyellow&#x27;: &#x27;#adff2f&#x27;,
+    &#x27;honeydew&#x27;: &#x27;#f0fff0&#x27;, &#x27;hotpink&#x27;: &#x27;#ff69b4&#x27;,
+    &#x27;indianred &#x27;: &#x27;#cd5c5c&#x27;, &#x27;indigo&#x27;: &#x27;#4b0082&#x27;, &#x27;ivory&#x27;: &#x27;#fffff0&#x27;, &#x27;khaki&#x27;: &#x27;#f0e68c&#x27;,
+    &#x27;lavender&#x27;: &#x27;#e6e6fa&#x27;, &#x27;lavenderblush&#x27;: &#x27;#fff0f5&#x27;, &#x27;lawngreen&#x27;: &#x27;#7cfc00&#x27;, &#x27;lemonchiffon&#x27;: &#x27;#fffacd&#x27;, &#x27;lightblue&#x27;: &#x27;#add8e6&#x27;, &#x27;
+lightcoral&#x27;: &#x27;#f08080&#x27;, &#x27;lightcyan&#x27;: &#x27;#e0ffff&#x27;, &#x27;lightgoldenrodyellow&#x27;: &#x27;#fafad2&#x27;,
+    &#x27;lightgrey&#x27;: &#x27;#d3d3d3&#x27;, &#x27;lightgreen&#x27;: &#x27;#90ee90&#x27;, &#x27;lightpink&#x27;: &#x27;#ffb6c1&#x27;, &#x27;lightsalmon&#x27;: &#x27;#ffa07a&#x27;, &#x27;lightseagreen&#x27;: &#x27;#20b2aa
+&#x27;, &#x27;lightskyblue&#x27;: &#x27;#87cefa&#x27;, &#x27;lightslategray&#x27;: &#x27;#778899&#x27;, &#x27;lightsteelblue&#x27;: &#x27;#b0c4de&#x27;,
+    &#x27;lightyellow&#x27;: &#x27;#ffffe0&#x27;, &#x27;lime&#x27;: &#x27;#00ff00&#x27;, &#x27;limegreen&#x27;: &#x27;#32cd32&#x27;, &#x27;linen&#x27;: &#x27;#faf0e6&#x27;,
+    &#x27;magenta&#x27;: &#x27;#ff00ff&#x27;, &#x27;maroon&#x27;: &#x27;#800000&#x27;, &#x27;mediumaquamarine&#x27;: &#x27;#66cdaa&#x27;, &#x27;mediumblue&#x27;: &#x27;#0000cd&#x27;, &#x27;mediumorchid&#x27;: &#x27;#ba55d3&#x27;, &#x27;
+mediumpurple&#x27;: &#x27;#9370d8&#x27;, &#x27;mediumseagreen&#x27;: &#x27;#3cb371&#x27;, &#x27;mediumslateblue&#x27;: &#x27;#7b68ee&#x27;,
+    &#x27;mediumspringgreen&#x27;: &#x27;#00fa9a&#x27;, &#x27;mediumturquoise&#x27;: &#x27;#48d1cc&#x27;, &#x27;mediumvioletred&#x27;: &#x27;#c71585&#x27;, &#x27;midnightblue&#x27;: &#x27;#191970&#x27;, &#x27;mintcream
+&#x27;: &#x27;#f5fffa&#x27;, &#x27;mistyrose&#x27;: &#x27;#ffe4e1&#x27;, &#x27;moccasin&#x27;: &#x27;#ffe4b5&#x27;,
+    &#x27;navajowhite&#x27;: &#x27;#ffdead&#x27;, &#x27;navy&#x27;: &#x27;#000080&#x27;,
+    &#x27;oldlace&#x27;: &#x27;#fdf5e6&#x27;, &#x27;olive&#x27;: &#x27;#808000&#x27;, &#x27;olivedrab&#x27;: &#x27;#6b8e23&#x27;, &#x27;orange&#x27;: &#x27;#ffa500&#x27;, &#x27;orangered&#x27;: &#x27;#ff4500&#x27;, &#x27;orchid&#x27;: &#x27;#da70d6
+&#x27;,
+    &#x27;palegoldenrod&#x27;: &#x27;#eee8aa&#x27;, &#x27;palegreen&#x27;: &#x27;#98fb98&#x27;, &#x27;paleturquoise&#x27;: &#x27;#afeeee&#x27;, &#x27;palevioletred&#x27;: &#x27;#d87093&#x27;, &#x27;papayawhip&#x27;: &#x27;#
+ffefd5&#x27;, &#x27;peachpuff&#x27;: &#x27;#ffdab9&#x27;, &#x27;peru&#x27;: &#x27;#cd853f&#x27;, &#x27;pink&#x27;: &#x27;#ffc0cb&#x27;, &#x27;plum&#x27;: &#x27;#dda0dd&#x27;, &#x27;powderblue&#x27;: &#x27;#b0e0e6&#x27;, &#x27;purple&#x27;: &#x27;#800080
+&#x27;,
+    &#x27;red&#x27;: &#x27;#ff0000&#x27;, &#x27;rosybrown&#x27;: &#x27;#bc8f8f&#x27;, &#x27;royalblue&#x27;: &#x27;#4169e1&#x27;,
+    &#x27;saddlebrown&#x27;: &#x27;#8b4513&#x27;, &#x27;salmon&#x27;: &#x27;#fa8072&#x27;, &#x27;sandybrown&#x27;: &#x27;#f4a460&#x27;, &#x27;seagreen&#x27;: &#x27;#2e8b57&#x27;, &#x27;seashell&#x27;: &#x27;#fff5ee&#x27;, &#x27;sienna
+&#x27;: &#x27;#a0522d&#x27;, &#x27;silver&#x27;: &#x27;#c0c0c0&#x27;, &#x27;skyblue&#x27;: &#x27;#87ceeb&#x27;, &#x27;slateblue&#x27;: &#x27;#6a5acd&#x27;, &#x27;slategray&#x27;: &#x27;#708090&#x27;, &#x27;snow&#x27;: &#x27;#fffafa&#x27;, &#x27;springgreen
+&#x27;: &#x27;#00ff7f&#x27;, &#x27;steelblue&#x27;: &#x27;#4682b4&#x27;,
+    &#x27;tan&#x27;: &#x27;#d2b48c&#x27;, &#x27;teal&#x27;: &#x27;#008080&#x27;, &#x27;thistle&#x27;: &#x27;#d8bfd8&#x27;, &#x27;tomato&#x27;: &#x27;#ff6347&#x27;, &#x27;turquoise&#x27;: &#x27;#40e0d0&#x27;,
+    &#x27;violet&#x27;: &#x27;#ee82ee&#x27;,
+    &#x27;wheat&#x27;: &#x27;#f5deb3&#x27;, &#x27;white&#x27;: &#x27;#ffffff&#x27;, &#x27;whitesmoke&#x27;: &#x27;#f5f5f5&#x27;,
+    &#x27;yellow&#x27;: &#x27;#ffff00&#x27;, &#x27;yellowgreen&#x27;: &#x27;#9acd32&#x27;
+  };
+
+  if (typeof color === &#x27;string&#x27; &#x26;&#x26; typeof colors[color.toLowerCase()] != &#x27;undefined&#x27;) {
+    return colors[color.toLowerCase()];
+  }
+  return color;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.darkenColor" id="apidoc.element.react-desktop.color.darkenColor">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>darkenColor
+        <span class="apidocSignatureSpan">(color, percent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function darkenColor(color, percent) {
+  return colorLuminance(color, -percent);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.hexToRgb" id="apidoc.element.react-desktop.color.hexToRgb">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>hexToRgb
+        <span class="apidocSignatureSpan">(hex)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hexToRgb(hex) {
+  var result = void 0;
+  if (hex.match(/^#.{3}$/)) {
+    result = /^#?([a-f\d])([a-f\d])([a-f\d])$/i.exec(hex);
+    result[1] += result[1];
+    result[2] += result[2];
+    result[3] += result[3];
+  } else {
+    result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  }
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.isDarkColor" id="apidoc.element.react-desktop.color.isDarkColor">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>isDarkColor
+        <span class="apidocSignatureSpan">(color)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDarkColor(color) {
+  var c = convertColor(color).substring(1); // strip #
+  var rgb = parseInt(c, 16); // convert rrggbb to decimal
+  var r = rgb &#x3e;&#x3e; 16 &#x26; 0xff; // extract red
+  var g = rgb &#x3e;&#x3e; 8 &#x26; 0xff; // extract green
+  var b = rgb &#x3e;&#x3e; 0 &#x26; 0xff; // extract blue
+
+  var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
+
+  return luma &#x3c; 40;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.ligthenColor" id="apidoc.element.react-desktop.color.ligthenColor">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>ligthenColor
+        <span class="apidocSignatureSpan">(color)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ligthenColor(color) {
+  return color;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.color.transparentize" id="apidoc.element.react-desktop.color.transparentize">
+        function <span class="apidocSignatureSpan">react-desktop.color.</span>transparentize
+        <span class="apidocSignatureSpan">(color, amount)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function transparentize(color, amount) {
+  var c = hexToRgb(color);
+  return &#x27;rgba(&#x27; + c.r + &#x27;, &#x27; + c.g + &#x27;, &#x27; + c.b + &#x27;, &#x27; + Math.round((1 - amount) * 1000) / 1000 + &#x27;)&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.desktopComponent" id="apidoc.module.react-desktop.desktopComponent">module react-desktop.desktopComponent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.desktopComponent.Dimension" id="apidoc.element.react-desktop.desktopComponent.Dimension">
+        function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Dimension
+        <span class="apidocSignatureSpan">(defaultWidth, defaultHeight)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Dimension(defaultWidth, defaultHeight) {
+  return [&#x27;Dimension&#x27;, { defaultWidth: defaultWidth, defaultHeight: defaultHeight }];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.desktopComponent.default" id="apidoc.element.react-desktop.desktopComponent.default">
+        function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DesktopComponent() {
+  for (var _len2 = arguments.length, options = Array(_len2), _key2 = 0; _key2 &#x3c; _len2; _key2++) {
+    options[_key2] = arguments[_key2];
+  }
+
+  if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) {
+    return ExtendComposedComponent.apply(null, [[], options[0]]);
+  }
+
+  return ExtendComposedComponent.bind(null, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.dimension" id="apidoc.module.react-desktop.dimension">module react-desktop.dimension</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.dimension.parseDimension" id="apidoc.element.react-desktop.dimension.parseDimension">
+        function <span class="apidocSignatureSpan">react-desktop.dimension.</span>parseDimension
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseDimension(value) {
+  if (typeof value === &#x27;number&#x27;) {
+    return value + &#x27;px&#x27;;
+  } else if (value.match(/^[0-9]+$/)) {
+    return value + &#x27;px&#x27;;
+  }
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.macOs" id="apidoc.module.react-desktop.macOs">module react-desktop.macOs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Box" id="apidoc.element.react-desktop.macOs.Box">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Box
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Button" id="apidoc.element.react-desktop.macOs.Button">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Button
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class2() {
+  _classCallCheck(this, _class2);
+
+  var _this = _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).call(this));
+
+  _this.windowFocus = function () {
+    _this.setState({ isWindowFocused: true });
+  };
+
+  _this.windowBlur = function () {
+    _this.setState({ isWindowFocused: false });
+  };
+
+  _this.state = {
+    isWindowFocused: (0, _monitor.windowIsFocused)()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Checkbox" id="apidoc.element.react-desktop.macOs.Checkbox">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Checkbox
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Dialog" id="apidoc.element.react-desktop.macOs.Dialog">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Dialog
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Label" id="apidoc.element.react-desktop.macOs.Label">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Label
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Link" id="apidoc.element.react-desktop.macOs.Link">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListView" id="apidoc.element.react-desktop.macOs.ListView">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListView
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewFooter" id="apidoc.element.react-desktop.macOs.ListViewFooter">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewFooter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewHeader" id="apidoc.element.react-desktop.macOs.ListViewHeader">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewRow" id="apidoc.element.react-desktop.macOs.ListViewRow">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewRow
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewSection" id="apidoc.element.react-desktop.macOs.ListViewSection">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSection
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Section() {
+  _classCallCheck(this, Section);
+
+  return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewSectionHeader" id="apidoc.element.react-desktop.macOs.ListViewSectionHeader">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSectionHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Header() {
+  _classCallCheck(this, Header);
+
+  return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ListViewSeparator" id="apidoc.element.react-desktop.macOs.ListViewSeparator">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ListViewSeparator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Pin" id="apidoc.element.react-desktop.macOs.Pin">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Pin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ProgressCircle" id="apidoc.element.react-desktop.macOs.ProgressCircle">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ProgressCircle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProgressCircle() {
+  _classCallCheck(this, ProgressCircle);
+
+  return _possibleConstructorReturn(this, (ProgressCircle.__proto__ || Object.getPrototypeOf(ProgressCircle)).apply(this, arguments
+));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Radio" id="apidoc.element.react-desktop.macOs.Radio">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Radio
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.SearchField" id="apidoc.element.react-desktop.macOs.SearchField">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SearchField
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.SegmentedControl" id="apidoc.element.react-desktop.macOs.SegmentedControl">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SegmentedControl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.SegmentedControlItem" id="apidoc.element.react-desktop.macOs.SegmentedControlItem">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>SegmentedControlItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Item() {
+  _classCallCheck(this, Item);
+
+  return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Text" id="apidoc.element.react-desktop.macOs.Text">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Text
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.TextInput" id="apidoc.element.react-desktop.macOs.TextInput">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>TextInput
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.TitleBar" id="apidoc.element.react-desktop.macOs.TitleBar">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>TitleBar
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Toolbar" id="apidoc.element.react-desktop.macOs.Toolbar">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Toolbar
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ToolbarNav" id="apidoc.element.react-desktop.macOs.ToolbarNav">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ToolbarNav
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.ToolbarNavItem" id="apidoc.element.react-desktop.macOs.ToolbarNavItem">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>ToolbarNavItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Item() {
+  _classCallCheck(this, Item);
+
+  return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.View" id="apidoc.element.react-desktop.macOs.View">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>View
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.macOs.Window" id="apidoc.element.react-desktop.macOs.Window">
+        function <span class="apidocSignatureSpan">react-desktop.macOs.</span>Window
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class2() {
+  _classCallCheck(this, _class2);
+
+  var _this = _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).call(this));
+
+  _this.windowFocus = function () {
+    _this.setState({ isWindowFocused: true });
+  };
+
+  _this.windowBlur = function () {
+    _this.setState({ isWindowFocused: false });
+  };
+
+  _this.state = {
+    isWindowFocused: (0, _monitor.windowIsFocused)()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.monitor" id="apidoc.module.react-desktop.monitor">module react-desktop.monitor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.monitor.windowIsFocused" id="apidoc.element.react-desktop.monitor.windowIsFocused">
+        function <span class="apidocSignatureSpan">react-desktop.monitor.</span>windowIsFocused
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function windowIsFocused() {
+  return isWindowFocused;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.os" id="apidoc.module.react-desktop.os">module react-desktop.os</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.os.default" id="apidoc.element.react-desktop.os.default">
+        function <span class="apidocSignatureSpan">react-desktop.os.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function os() {
+  // explicitly set these to avoid issues
+  var w = window || null;
+  var n = navigator || null;
+  var p = process || window &#x26;&#x26; window.process || null;
+
+  // via node
+  if (p &#x26;&#x26; p.platform) {
+    if (p.platform === &#x27;darwin&#x27;) {
+      return MACOS;
+    }
+    if (p.platform.includes(&#x27;win&#x27;)) {
+      return WINDOWS;
+    }
+  }
+
+  // via user agent
+  if (n &#x26;&#x26; n.userAgent) {
+    if (n.userAgent.includes(&#x27;Macintosh&#x27;)) {
+      return MACOS;
+    }
+    if (n.userAgent.includes(&#x27;Windows&#x27;)) {
+      return WINDOWS;
+    }
+  }
+
+  // default to macOs
+  return MACOS;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.osx" id="apidoc.module.react-desktop.osx">module react-desktop.osx</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Box" id="apidoc.element.react-desktop.osx.Box">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Box
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Button" id="apidoc.element.react-desktop.osx.Button">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Button
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class2() {
+  _classCallCheck(this, _class2);
+
+  var _this = _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).call(this));
+
+  _this.windowFocus = function () {
+    _this.setState({ isWindowFocused: true });
+  };
+
+  _this.windowBlur = function () {
+    _this.setState({ isWindowFocused: false });
+  };
+
+  _this.state = {
+    isWindowFocused: (0, _monitor.windowIsFocused)()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Checkbox" id="apidoc.element.react-desktop.osx.Checkbox">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Checkbox
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Dialog" id="apidoc.element.react-desktop.osx.Dialog">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Dialog
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Label" id="apidoc.element.react-desktop.osx.Label">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Label
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Link" id="apidoc.element.react-desktop.osx.Link">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListView" id="apidoc.element.react-desktop.osx.ListView">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListView
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewFooter" id="apidoc.element.react-desktop.osx.ListViewFooter">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewFooter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewHeader" id="apidoc.element.react-desktop.osx.ListViewHeader">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewRow" id="apidoc.element.react-desktop.osx.ListViewRow">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewRow
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewSection" id="apidoc.element.react-desktop.osx.ListViewSection">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSection
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Section() {
+  _classCallCheck(this, Section);
+
+  return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewSectionHeader" id="apidoc.element.react-desktop.osx.ListViewSectionHeader">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSectionHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Header() {
+  _classCallCheck(this, Header);
+
+  return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ListViewSeparator" id="apidoc.element.react-desktop.osx.ListViewSeparator">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ListViewSeparator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Pin" id="apidoc.element.react-desktop.osx.Pin">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Pin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ProgressCircle" id="apidoc.element.react-desktop.osx.ProgressCircle">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ProgressCircle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProgressCircle() {
+  _classCallCheck(this, ProgressCircle);
+
+  return _possibleConstructorReturn(this, (ProgressCircle.__proto__ || Object.getPrototypeOf(ProgressCircle)).apply(this, arguments
+));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Radio" id="apidoc.element.react-desktop.osx.Radio">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Radio
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.SearchField" id="apidoc.element.react-desktop.osx.SearchField">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>SearchField
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.SegmentedControl" id="apidoc.element.react-desktop.osx.SegmentedControl">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>SegmentedControl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.SegmentedControlItem" id="apidoc.element.react-desktop.osx.SegmentedControlItem">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>SegmentedControlItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Item() {
+  _classCallCheck(this, Item);
+
+  return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Text" id="apidoc.element.react-desktop.osx.Text">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Text
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.TextInput" id="apidoc.element.react-desktop.osx.TextInput">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>TextInput
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.TitleBar" id="apidoc.element.react-desktop.osx.TitleBar">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>TitleBar
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Toolbar" id="apidoc.element.react-desktop.osx.Toolbar">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Toolbar
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ToolbarNav" id="apidoc.element.react-desktop.osx.ToolbarNav">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ToolbarNav
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.ToolbarNavItem" id="apidoc.element.react-desktop.osx.ToolbarNavItem">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>ToolbarNavItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Item() {
+  _classCallCheck(this, Item);
+
+  return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.View" id="apidoc.element.react-desktop.osx.View">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>View
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.osx.Window" id="apidoc.element.react-desktop.osx.Window">
+        function <span class="apidocSignatureSpan">react-desktop.osx.</span>Window
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class2() {
+  _classCallCheck(this, _class2);
+
+  var _this = _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).call(this));
+
+  _this.windowFocus = function () {
+    _this.setState({ isWindowFocused: true });
+  };
+
+  _this.windowBlur = function () {
+    _this.setState({ isWindowFocused: false });
+  };
+
+  _this.state = {
+    isWindowFocused: (0, _monitor.windowIsFocused)()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.placeholderStyle" id="apidoc.module.react-desktop.placeholderStyle">module react-desktop.placeholderStyle</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.placeholderStyle.default" id="apidoc.element.react-desktop.placeholderStyle.default">
+        function <span class="apidocSignatureSpan">react-desktop.placeholderStyle.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _default() {
+  _classCallCheck(this, _default);
+
+  var _this = _possibleConstructorReturn(this, (_default.__proto__ || Object.getPrototypeOf(_default)).call(this));
+
+  _this._id = generateUniqueId();
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.styleHelper" id="apidoc.module.react-desktop.styleHelper">module react-desktop.styleHelper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.applyDefaultProps" id="apidoc.element.react-desktop.styleHelper.applyDefaultProps">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>applyDefaultProps
+        <span class="apidocSignatureSpan">(props, context, defaultProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function applyDefaultProps(props, context, defaultProps) {
+  var finalProps = _extends({}, props);
+
+  for (var prop in defaultProps) {
+    if (defaultProps.hasOwnProperty(prop)) {
+      if (!props[prop]) {
+        if (context[prop]) {
+          finalProps[prop] = context[prop];
+        } else {
+          finalProps[prop] = defaultProps[prop];
+        }
+      } else if (props[prop] &#x26;&#x26; typeof props[prop] === &#x27;boolean&#x27; &#x26;&#x26; typeof defaultProps[prop] !== &#x27;boolean&#x27;) {
+        if (context.color) {
+          finalProps[prop] = context[prop];
+        } else {
+          finalProps[prop] = defaultProps[prop];
+        }
+      }
+    }
+  }
+
+  return finalProps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.default" id="apidoc.element.react-desktop.styleHelper.default">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>default
+        <span class="apidocSignatureSpan">(options, propTypes, mapStyleCallback, mapStylesCallback, mapProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function styleHelper(options, propTypes, mapStyleCallback, mapStylesCallback, mapProps) {
+  if (!mapProps || typeof mapProps !== &#x27;function&#x27;) {
+    mapProps = function mapProps(props) {
+      return props;
+    };
+  }
+
+  function doStyleHelper(WrappedComponent) {
+    var _options = _slicedToArray(options, 3),
+        element = _options[0],
+        elementProps = _options[1],
+        defaultStyles = _options[2];
+
+    if ((0, _react.isValidElement)(element)) {
+      if (hasProps(elementProps, propTypes) || hasProps(defaultStyles, propTypes)) {
+        var styles = extractProps(elementProps, propTypes)[1];
+        var props = element.props ? _extends({}, element.props) : {};
+        props.style = mapStyle(props.style, styles, defaultStyles, mapStyleCallback, mapStylesCallback, elementProps);
+        return (0, _react.cloneElement)(element, mapProps(props, element.props, true));
+      }
+      return (0, _react.cloneElement)(element, mapProps(element.props, element.props, false));
+    } else {
+      var _defaultStyles = void 0;
+      if (options &#x26;&#x26; Object.prototype.toString.call(options) === &#x27;[object Array]&#x27;) {
+        _defaultStyles = options[0];
+      }
+      return function (_Component) {
+        _inherits(_class, _Component);
+
+        function _class() {
+          _classCallCheck(this, _class);
+
+          return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+        }
+
+        _createClass(_class, [{
+          key: &#x27;render&#x27;,
+          value: function render() {
+            if (hasProps(this.props, propTypes) || hasProps(_defaultStyles, propTypes)) {
+              var _extractProps = extractProps(this.props, propTypes),
+                  _extractProps2 = _slicedToArray(_extractProps, 2),
+                  _props = _extractProps2[0],
+                  _styles = _extractProps2[1];
+
+              if (!_props) _props = {};
+              _props.style = mapStyle(_props.style, _styles, _defaultStyles, mapStyleCallback, mapStylesCallback, this.props);
+              return _react2.default.createElement(WrappedComponent, mapProps(_props, this.props, true));
+            }
+            return _react2.default.createElement(WrappedComponent, mapProps(this.props, this.props, false));
+          }
+        }]);
+
+        return _class;
+      }(_react.Component);
+    }
+  }
+
+  if (options[0] &#x26;&#x26; (0, _react.isValidElement)(options[0])) {
+    return doStyleHelper();
+  }
+
+  return doStyleHelper;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.extractProps" id="apidoc.element.react-desktop.styleHelper.extractProps">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>extractProps
+        <span class="apidocSignatureSpan">(props, proptypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function extractProps(props, proptypes) {
+  if (!proptypes) return [{}, {}];
+
+  var finalProps = {};
+  var extractedProps = {};
+  for (var prop in props) {
+    if (props.hasOwnProperty(prop)) {
+      if (proptypes[prop] !== undefined) {
+        extractedProps[prop] = props[prop];
+      } else {
+        finalProps[prop] = props[prop];
+      }
+    }
+  }
+  return [finalProps, extractedProps];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.hasProps" id="apidoc.element.react-desktop.styleHelper.hasProps">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>hasProps
+        <span class="apidocSignatureSpan">(props, proptypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hasProps(props, proptypes) {
+  if (!proptypes) return false;
+
+  for (var prop in props) {
+    if (props.hasOwnProperty(prop)) {
+      if (proptypes[prop] !== undefined) {
+        return true;
+      }
+    }
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.mapStyle" id="apidoc.element.react-desktop.styleHelper.mapStyle">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>mapStyle
+        <span class="apidocSignatureSpan">(prevStyles, nextStyles, defaultStyles, styleCallback, stylesCallback, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapStyle(prevStyles, nextStyles, defaultStyles, styleCallback, stylesCallback, props) {
+  var finalStyles = _extends({}, prevStyles);
+  if (defaultStyles) {
+    for (var key in defaultStyles) {
+      if (defaultStyles.hasOwnProperty(key)) {
+        finalStyles[key] = defaultStyles[key];
+      }
+    }
+  }
+
+  for (var _key in nextStyles) {
+    if (nextStyles.hasOwnProperty(_key)) {
+      if (styleCallback) {
+        var result = styleCallback(_key, nextStyles[_key], props);
+        if (result) {
+          finalStyles[result[0]] = result[1];
+        }
+      } else finalStyles[_key] = nextStyles[_key];
+    }
+  }
+
+  if (typeof stylesCallback === &#x27;function&#x27;) return stylesCallback(finalStyles, props);
+  return finalStyles;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.styleHelper.parseDimension" id="apidoc.element.react-desktop.styleHelper.parseDimension">
+        function <span class="apidocSignatureSpan">react-desktop.styleHelper.</span>parseDimension
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseDimension(value) {
+  if (typeof value === &#x27;number&#x27;) {
+    return value + &#x27;px&#x27;;
+  } else if (value.match(/^[0-9]+$/)) {
+    return value + &#x27;px&#x27;;
+  }
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.windowFocus" id="apidoc.module.react-desktop.windowFocus">module react-desktop.windowFocus</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windowFocus.default" id="apidoc.element.react-desktop.windowFocus.default">
+        function <span class="apidocSignatureSpan">react-desktop.windowFocus.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function () {
+  for (var _len = arguments.length, options = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    options[_key] = arguments[_key];
+  }
+
+  if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) return WindowFocus.apply(null, [[], options[0]]);
+  return WindowFocus.bind(null, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+}, {
+  key: &#x27;init&#x27;,
+  value: function init() {
+    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
+default</span>(this)]);
+    }
+    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
+      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
+    }
+    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
+&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
+1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
+&#x27;) !== -1) {
+      var componentOptions = {
+        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-desktop.windows" id="apidoc.module.react-desktop.windows">module react-desktop.windows</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Button" id="apidoc.element.react-desktop.windows.Button">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Button
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Checkbox" id="apidoc.element.react-desktop.windows.Checkbox">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Checkbox
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Label" id="apidoc.element.react-desktop.windows.Label">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Label
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.MasterDetailsView" id="apidoc.element.react-desktop.windows.MasterDetailsView">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsView
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.MasterDetailsViewItem" id="apidoc.element.react-desktop.windows.MasterDetailsViewItem">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.MasterDetailsViewItemDetails" id="apidoc.element.react-desktop.windows.MasterDetailsViewItemDetails">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItemDetails
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.MasterDetailsViewItemMaster" id="apidoc.element.react-desktop.windows.MasterDetailsViewItemMaster">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>MasterDetailsViewItemMaster
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.NavPane" id="apidoc.element.react-desktop.windows.NavPane">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>NavPane
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.NavPaneItem" id="apidoc.element.react-desktop.windows.NavPaneItem">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>NavPaneItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.ProgressCircle" id="apidoc.element.react-desktop.windows.ProgressCircle">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>ProgressCircle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Radio" id="apidoc.element.react-desktop.windows.Radio">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Radio
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Text" id="apidoc.element.react-desktop.windows.Text">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Text
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.TextInput" id="apidoc.element.react-desktop.windows.TextInput">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>TextInput
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.TitleBar" id="apidoc.element.react-desktop.windows.TitleBar">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>TitleBar
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.View" id="apidoc.element.react-desktop.windows.View">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>View
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class() {
+  _classCallCheck(this, _class);
+
+  return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-desktop.windows.Window" id="apidoc.element.react-desktop.windows.Window">
+        function <span class="apidocSignatureSpan">react-desktop.windows.</span>Window
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _class2() {
+  _classCallCheck(this, _class2);
+
+  var _this = _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).call(this));
+
+  _this.windowFocus = function () {
+    _this.setState({ isWindowFocused: true });
+  };
+
+  _this.windowBlur = function () {
+    _this.setState({ isWindowFocused: false });
+  };
+
+  _this.state = {
+    isWindowFocused: (0, _monitor.windowIsFocused)()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
