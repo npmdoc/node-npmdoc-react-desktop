@@ -51,7 +51,7 @@
 
         href="https://github.com/gabrielbull/react-desktop#readme"
 
-    >react-desktop (v0.2.19)</a>
+    >react-desktop (v0.3.0)</a>
 </h1>
 <h4>React UI Components for macOS Sierra and Windows 10</h4>
 <div class="apidocSectionDiv"><a
@@ -70,18 +70,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>color</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>desktopComponent</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-desktop.</span>dimension</span>
 
         </li>
 
@@ -200,95 +188,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.react-desktop.color.transparentize">
             function <span class="apidocSignatureSpan">react-desktop.color.</span>transparentize
             <span class="apidocSignatureSpan">(color, amount)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.desktopComponent">module react-desktop.desktopComponent</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.desktopComponent.Dimension">
-            function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Dimension
-            <span class="apidocSignatureSpan">(defaultWidth, defaultHeight)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.desktopComponent.default">
-            function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>default
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Alignment</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Background</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Hidden</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>HorizontalAlignment</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Margin</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Padding</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>PlaceholderStyle</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>VerticalAlignment</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>WindowFocus</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-desktop.dimension">module react-desktop.dimension</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-desktop.dimension.parseDimension">
-            function <span class="apidocSignatureSpan">react-desktop.dimension.</span>parseDimension
-            <span class="apidocSignatureSpan">(value)</span>
             </a>
 
         </li>
@@ -1084,10 +983,6 @@
 
 
 
-
-
-
-
 </div>
 
 <div class="apidocSectionDiv">
@@ -1109,27 +1004,7 @@
   if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) return ValueRef.apply(null, [options[0]]);
   return ValueRef.bind(options);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1289,112 +1164,6 @@ ffefd5&#x27;, &#x27;peachpuff&#x27;: &#x27;#ffdab9&#x27;, &#x27;peru&#x27;: &#x2
     <li>description and source-code<pre class="apidocCodePre">function transparentize(color, amount) {
   var c = hexToRgb(color);
   return &#x27;rgba(&#x27; + c.r + &#x27;, &#x27; + c.g + &#x27;, &#x27; + c.b + &#x27;, &#x27; + Math.round((1 - amount) * 1000) / 1000 + &#x27;)&#x27;;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-desktop.desktopComponent" id="apidoc.module.react-desktop.desktopComponent">module react-desktop.desktopComponent</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-desktop.desktopComponent.Dimension" id="apidoc.element.react-desktop.desktopComponent.Dimension">
-        function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>Dimension
-        <span class="apidocSignatureSpan">(defaultWidth, defaultHeight)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Dimension(defaultWidth, defaultHeight) {
-  return [&#x27;Dimension&#x27;, { defaultWidth: defaultWidth, defaultHeight: defaultHeight }];
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.react-desktop.desktopComponent.default" id="apidoc.element.react-desktop.desktopComponent.default">
-        function <span class="apidocSignatureSpan">react-desktop.desktopComponent.</span>default
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function DesktopComponent() {
-  for (var _len2 = arguments.length, options = Array(_len2), _key2 = 0; _key2 &#x3c; _len2; _key2++) {
-    options[_key2] = arguments[_key2];
-  }
-
-  if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) {
-    return ExtendComposedComponent.apply(null, [[], options[0]]);
-  }
-
-  return ExtendComposedComponent.bind(null, options);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
-    </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-desktop.dimension" id="apidoc.module.react-desktop.dimension">module react-desktop.dimension</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-desktop.dimension.parseDimension" id="apidoc.element.react-desktop.dimension.parseDimension">
-        function <span class="apidocSignatureSpan">react-desktop.dimension.</span>parseDimension
-        <span class="apidocSignatureSpan">(value)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function parseDimension(value) {
-  if (typeof value === &#x27;number&#x27;) {
-    return value + &#x27;px&#x27;;
-  } else if (value.match(/^[0-9]+$/)) {
-    return value + &#x27;px&#x27;;
-  }
-  return value;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1928,7 +1697,7 @@ default</span>(this)]);
   // explicitly set these to avoid issues
   var w = window || null;
   var n = navigator || null;
-  var p = process || window &#x26;&#x26; window.process || null;
+  var p = process || w &#x26;&#x26; w.process || null;
 
   // via node
   if (p &#x26;&#x26; p.platform) {
@@ -1953,27 +1722,7 @@ default</span>(this)]);
   // default to macOs
   return MACOS;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2493,27 +2242,7 @@ default</span>(this)]);
   _this._id = generateUniqueId();
   return _this;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2628,27 +2357,7 @@ default</span>(this)]);
 
   return doStyleHelper;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2781,27 +2490,7 @@ default</span>(this)]);
   if (options.length === 1 &#x26;&#x26; typeof options[0] === &#x27;function&#x27;) return WindowFocus.apply(null, [[], options[0]]);
   return WindowFocus.bind(null, options);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    });
-  }
-}, {
-  key: &#x27;init&#x27;,
-  value: function init() {
-    if (options.indexOf(&#x27;WindowFocus&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _windowFocus2.<span class="apidocCodeKeywordSpan">
-default</span>(this)]);
-    }
-    if (options.indexOf(&#x27;PlaceholderStyle&#x27;) !== -1) {
-      this._components = [].concat(_toConsumableArray(this._components), [new _placeholderStyle2.default(this)]);
-    }
-    if (options.indexOf(&#x27;Dimension&#x27;) !== -1 || options.indexOf(&#x27;Margin&#x27;) !== -1 || options.indexOf(&#x27;Padding
-&#x27;) !== -1 || options.indexOf(&#x27;HorizontalAlignment&#x27;) !== -1 || options.indexOf(&#x27;VerticalAlignment&#x27;) !== -
-1 || options.indexOf(&#x27;Alignment&#x27;) !== -1 || options.indexOf(&#x27;Hidden&#x27;) !== -1 || options.indexOf(&#x27;Background
-&#x27;) !== -1) {
-      var componentOptions = {
-        dimension: options.indexOf(&#x27;Dimension&#x27;) !== -1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
